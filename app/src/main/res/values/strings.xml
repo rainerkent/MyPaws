@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyPaws</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title1">Does Your Dog \'Talk\' to You</string>
+    <string name="art1">Study may advance what\'s known about canine-human communication.</string>
+    <string name="auth1">By Robert Preidt</string>
+    <string name="title2">Be Wary of Shopping for Pet Meds Online</string>
+    <string name="art2">To be \'purrfectly\' safe, check your vet first, suggest FDA.</string>
+    <string name="auth2">By Robert Priedt</string>
+    <string name="title3">Help Your Fat Cat Become a Fit Cat</string>
+    <string name="art3">What can you do to help Fluffy slim down? Feed her the right foods, keep her active, and avoid these feline no-nos</string>
+    <string name="auth3">By Dennis Thompso Jr.</string>
+    <string name="title4">10 Cat Exercises Your Pet Will Enjoy</string>
+    <string name="art4">A workout for cats? Veterinary experts say a little exercise will help your feline friend stay in shape</string>
+    <string name="auth4">By Wyatt Myers</string>
+    <string name="title5">Could Injection Be Used Someday to Spay or Neuter Pets?</string>
+    <string name="art5">Mouse study shows promise for alternative to surgical sterilization for dogs, cats.</string>
+    <string name="auth5">By Robert Priedt</string>
+
+</resources>

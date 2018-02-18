@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="The Scoop"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#1DE129"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title1"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#1DE129"/>
+
+			<ImageView
+				android:src="@drawable/article1"
+				android:layout_centerInParent="true"
+				android:layout_height="180dp"
+				android:layout_width="match_parent"
+				android:id="@+id/pet_image"
+				android:scaleType="centerCrop"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/art1"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/auth1"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_marginBottom="16dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title2"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#1DE129"/>
+
+			<ImageView
+				android:src="@drawable/article2"
+				android:layout_centerInParent="true"
+				android:layout_height="180dp"
+				android:layout_width="match_parent"
+				android:id="@+id/pet_image"
+				android:scaleType="centerCrop"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/art2"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/auth2"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_marginBottom="16dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title3"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#1DE129"/>
+
+			<ImageView
+				android:src="@drawable/article3"
+				android:layout_centerInParent="true"
+				android:layout_height="180dp"
+				android:layout_width="match_parent"
+				android:id="@+id/pet_image"
+				android:scaleType="centerCrop"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/art3"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/auth3"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_marginBottom="16dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title4"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#1DE129"/>
+
+			<ImageView
+				android:src="@drawable/article4"
+				android:layout_centerInParent="true"
+				android:layout_height="180dp"
+				android:layout_width="match_parent"
+				android:id="@+id/pet_image"
+				android:scaleType="centerCrop"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/art4"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/auth4"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_marginBottom="16dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title5"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold"
+				android:textColor="#1DE129"/>
+
+			<ImageView
+				android:src="@drawable/article5"
+				android:layout_centerInParent="true"
+				android:layout_height="180dp"
+				android:layout_width="match_parent"
+				android:id="@+id/pet_image"
+				android:scaleType="centerCrop"
+				android:layout_margin="16dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/art5"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/auth5"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_marginBottom="16dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+
