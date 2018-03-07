@@ -23,6 +23,7 @@
         <activity android:name=".ScoopActivity" />
         <activity android:name=".VerifyClaimActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".SignUpActivity" />
     </application>
 
 </manifest>

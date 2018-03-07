@@ -52,42 +52,42 @@ public class SignInActivity extends AppCompatActivity {
 
                 progressView.setVisibility(View.VISIBLE);
 
-//                if (etuser.getText().toString().equals("admin") &&
-//                        etpass.getText().toString().equals("admin")) {
-//                    Intent loginIntent = new Intent(getApplicationContext(), HomeActivity.class);
-//                    startActivity(loginIntent);
-//                    Toast.makeText(getApplicationContext(),
-//                            "Logging in .......", Toast.LENGTH_SHORT).show();
-//
-//                } else {
-//                    Toast.makeText(SignInActivity.this, "Wrong Credentials", Toast.LENGTH_SHORT).show();
-//                }
+                // if (etuser.getText().toString().equals("admin") &&
+                //        etpass.getText().toString().equals("admin")) {
+                //    Intent loginIntent = new Intent(getApplicationContext(), HomeActivity.class);
+                //    startActivity(loginIntent);
+                //    Toast.makeText(getApplicationContext(),
+                //            "Logging in .......", Toast.LENGTH_SHORT).show();
+
+                // } else {
+                //    Toast.makeText(SignInActivity.this, "Wrong Credentials", Toast.LENGTH_SHORT).show();
+                // }
                 auth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(SignInActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                progressView.setVisibility(View.GONE);
-                                if (!task.isSuccessful()) {
-                                    // there was an error
-                                    if (password.length() < 6) {
-                                        etpass.setError("Minimum of 6 characters");
-                                    } else {
-                                        Toast.makeText(SignInActivity.this, "Authentication Failed", Toast.LENGTH_LONG).show();
-                                    }
+                    .addOnCompleteListener(SignInActivity.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            progressView.setVisibility(View.GONE);
+                            if (!task.isSuccessful()) {
+                                // there was an error
+                                if (password.length() < 6) {
+                                    etpass.setError("Minimum of 6 characters");
                                 } else {
-                                    Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
-                                    startActivity(intent);
-                                    finish();
+                                    Toast.makeText(SignInActivity.this, "Authentication Failed", Toast.LENGTH_LONG).show();
                                 }
+                            } else {
+                                Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
+                                startActivity(intent);
+                                finish();
                             }
-                        });
+                        }
+                    });
             }
         });
 
         breg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registerIntent = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent registerIntent = new Intent(getApplicationContext(), SignUpActivity.class);
                 startActivity(registerIntent);
             }
         });
