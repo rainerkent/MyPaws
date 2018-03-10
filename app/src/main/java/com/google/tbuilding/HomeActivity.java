@@ -14,13 +14,13 @@ public class HomeActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
-		
+
 		sp = getSharedPreferences(getPackageName(), Activity.MODE_PRIVATE);
 		String userName = sp.getString("USER_NAME", null);
 		TextView name = findViewById(R.id.user_name);
 		name.setText(userName);
-		
-		TextView logout = findViewById(R.id.user_name);
+
+		TextView logout = findViewById(R.id.log_out);
 		logout.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -31,20 +31,27 @@ public class HomeActivity extends Activity
 				finish();
 			}
 		});
-		
-		
-		Button newClaimButton = (Button) findViewById(R.id.newclaim);
+
+
+		Button newClaimButton = findViewById(R.id.newclaim);
 		newClaimButton.setOnClickListener(new OnClickListener(){
 			public void onClick(View v){
-				startActivity(new Intent(v.getContext(), NewClaimActivity.class));
+				startActivity(new Intent(getApplicationContext(), NewClaimActivity.class));
 			}
 		});
-		
-		Button scoopButton = (Button) findViewById(R.id.scoop);
+
+		Button scoopButton = findViewById(R.id.scoop);
 		scoopButton.setOnClickListener(new OnClickListener(){
-				public void onClick(View v){
-					startActivity(new Intent(v.getContext(), ScoopActivity.class));
-				}
-			});
+			public void onClick(View v){
+				startActivity(new Intent(getApplicationContext(), ScoopActivity.class));
+			}
+		});
+
+		Button referButton = findViewById(R.id.refer);
+		scoopButton.setOnClickListener(new OnClickListener(){
+			public void onClick(View v){
+				startActivity(new Intent(getApplicationContext(), AddPetActivity.class));
+			}
+		});
 	}
 }

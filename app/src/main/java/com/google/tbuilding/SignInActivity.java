@@ -85,7 +85,7 @@ public class SignInActivity extends AppCompatActivity {
                                     public void onDataChange(DataSnapshot dataSnapshot) {
                                         String userFullName = dataSnapshot.child("firstname").getValue().toString() + " " + dataSnapshot.child("lastname").getValue().toString();
                                         sp.putString("USER_UID" , userUid);
-                                        sp.putString("USER_NAME" , dataSnapshot.child("firstname").getValue().toString());
+                                        sp.putString("USER_NAME" , userFullName);
                                         sp.apply();
                                     }
                                     @Override

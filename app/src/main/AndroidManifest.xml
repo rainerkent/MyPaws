@@ -24,6 +24,15 @@
         <activity android:name=".VerifyClaimActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".AddPetActivity"
+            android:label="@string/title_activity_add_pet"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.google.tbuilding.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>

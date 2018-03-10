@@ -36,7 +36,6 @@
 			android:layout_margin="2dp"
 			android:layout_weight="1.0"
 			android:background="@color/primary"
-			android:backgroundTint="@color/primary"
 			android:text="New Claim"/>
 
 		<Button
@@ -47,7 +46,6 @@
 			android:layout_margin="2dp"
 			android:layout_weight="1.0"
 			android:background="@color/primary"
-			android:backgroundTint="@color/primary"
 			android:text="View My Claims"/>
 
 		<Button
@@ -58,7 +56,6 @@
 			android:layout_margin="2dp"
 			android:layout_weight="1.0"
 			android:background="@color/primary"
-			android:backgroundTint="@color/primary"
 			android:text="Messages"/>
 
 	</LinearLayout>
@@ -77,7 +74,6 @@
 			android:layout_margin="2dp"
 			android:layout_weight="1.0"
 			android:background="@color/primary"
-			android:backgroundTint="@color/primary"
 			android:text="My Account"/>
 
 		<Button
@@ -88,7 +84,6 @@
 			android:layout_margin="2dp"
 			android:layout_weight="1.0"
 			android:background="@color/primary"
-			android:backgroundTint="@color/primary"
 			android:text="The Scoop"/>
 
 		<Button
@@ -99,7 +94,6 @@
 			android:layout_margin="2dp"
 			android:layout_weight="1.0"
 			android:background="@color/primary"
-			android:backgroundTint="@color/primary"
 			android:text="Refer A Friend"/>
 
 	</LinearLayout>
