@@ -47,5 +47,6 @@
         <item>Male</item>
         <item>Female</item>
     </array>
+    <string name="title_activity_add_pet">AddPetActivity</string>
 
 </resources>
