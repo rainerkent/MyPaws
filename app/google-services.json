@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "538401136032",
+    "firebase_url": "https://mypaws-a3399.firebaseio.com",
+    "project_id": "mypaws-a3399",
+    "storage_bucket": "mypaws-a3399.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538401136032:android:d9f19e7b80b5bf97",
+        "android_client_info": {
+          "package_name": "com.google.tbuilding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538401136032-qi75c6lda8uhv5a4djoac5ahkcvgnuni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsC72YgArz4OTvoe_uT721lQw6lRypXmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
