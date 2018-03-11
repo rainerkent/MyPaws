@@ -30,7 +30,7 @@
 
 		<Button
 			android:id="@+id/newclaim"
-			style="@style/AppTheme"
+			style="@style/CustomButton"
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_margin="2dp"
@@ -40,7 +40,7 @@
 
 		<Button
 			android:id="@+id/view"
-			style="@style/Widget.AppCompat.Button.Colored"
+			style="@style/CustomButton"
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_margin="2dp"
@@ -50,7 +50,7 @@
 
 		<Button
 			android:id="@+id/message"
-			style="@style/Widget.AppCompat.Button.Colored"
+			style="@style/CustomButton"
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_margin="2dp"
@@ -68,7 +68,7 @@
 
 		<Button
 			android:id="@+id/myacc"
-			style="@style/Widget.AppCompat.Button.Colored"
+			style="@style/CustomButton"
 			android:layout_width="0.0dp"
 			android:layout_height="match_parent"
 			android:layout_margin="2dp"
@@ -78,7 +78,7 @@
 
 		<Button
 			android:id="@+id/scoop"
-			style="@style/Widget.AppCompat.Button.Colored"
+			style="@style/CustomButton"
 			android:layout_width="0.0dp"
 			android:layout_height="match_parent"
 			android:layout_margin="2dp"
@@ -88,7 +88,7 @@
 
 		<Button
 			android:id="@+id/refer"
-			style="@style/Widget.AppCompat.Button.Colored"
+			style="@style/CustomButton"
 			android:layout_width="0.0dp"
 			android:layout_height="match_parent"
 			android:layout_margin="2dp"

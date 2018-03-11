@@ -6,6 +6,7 @@ import android.view.*;
 import android.view.View.*;
 import android.widget.*;
 import java.util.*;
+import com.squareup.picasso.Picasso;
 
 public class ClaimAdapter extends RecyclerView.Adapter<ClaimAdapter.ViewHolder>
 {
@@ -28,8 +29,8 @@ public class ClaimAdapter extends RecyclerView.Adapter<ClaimAdapter.ViewHolder>
     public ClaimAdapter()
 	{
         mDataset = new ArrayList<>();
-		mDataset.add(new Pet("Muning", R.drawable.muning));
-		mDataset.add(new Pet("Tukoy", R.drawable.tukoy));
+		// mDataset.add(new Pet("Muning", R.drawable.muning));
+		// mDataset.add(new Pet("Tukoy", R.drawable.tukoy));
     }
 
     @Override
@@ -44,7 +45,8 @@ public class ClaimAdapter extends RecyclerView.Adapter<ClaimAdapter.ViewHolder>
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position)
 	{
-        holder.mPetImage.setImageResource(mDataset.get(position).getImage());
+        // holder.mPetImage.setImage(mDataset.get(position).getImage());
+        Picasso.with(holder.itemView.getContext()).load(mDataset.get(position).getImage()).into(holder.mPetImage);
 		holder.mPetName.setText(mDataset.get(position).getName());
 
 		holder.itemView.setOnClickListener(new OnClickListener(){

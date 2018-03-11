@@ -76,8 +76,6 @@ public class SignInActivity extends AppCompatActivity {
                                     Toast.makeText(SignInActivity.this, "Authentication Failed", Toast.LENGTH_LONG).show();
                                 }
                             } else {
-                                Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
-                                startActivity(intent);
                                 final String userUid = firebaseAuth.getCurrentUser().getUid();
                                 final DatabaseReference currentUserDB = databaseReference.child(userUid);
                                 currentUserDB.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -86,14 +84,17 @@ public class SignInActivity extends AppCompatActivity {
                                         String userFullName = dataSnapshot.child("firstname").getValue().toString() + " " + dataSnapshot.child("lastname").getValue().toString();
                                         sp.putString("USER_UID" , userUid);
                                         sp.putString("USER_NAME" , userFullName);
-                                        sp.apply();
+                                        sp.commit();
+
+                                        Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
+                                        startActivity(intent);
+                                        finish();
                                     }
                                     @Override
                                     public void onCancelled(DatabaseError databaseError) {
                                         Log.e("SignInActivity", "onCancelled", databaseError.toException());
                                     }
                                 });
-                                finish();
                             }
                         }
                     });

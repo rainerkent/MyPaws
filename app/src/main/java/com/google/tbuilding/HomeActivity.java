@@ -1,13 +1,20 @@
 package com.google.tbuilding;
+
 import android.os.*;
 import android.app.*;
+import android.support.annotation.NonNull;
 import android.widget.*;
 import android.view.View.*;
 import android.view.*;
 import android.content.*;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class HomeActivity extends Activity
 {
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
 	SharedPreferences sp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -15,7 +22,20 @@ public class HomeActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
+		mAuth = FirebaseAuth.getInstance();
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if (firebaseAuth.getCurrentUser() == null) {
+                    Intent signInIntent = new Intent(HomeActivity.this, SignInActivity.class);
+                    signInIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(signInIntent);
+                }
+            }
+        };
+
 		sp = getSharedPreferences(getPackageName(), Activity.MODE_PRIVATE);
+
 		String userName = sp.getString("USER_NAME", null);
 		TextView name = findViewById(R.id.user_name);
 		name.setText(userName);
@@ -27,8 +47,9 @@ public class HomeActivity extends Activity
 				SharedPreferences.Editor editor = sp.edit();
 				editor.clear();
 				editor.apply();
-				startActivity(new Intent(getApplicationContext(), SignInActivity.class));
-				finish();
+				// startActivity(new Intent(getApplicationContext(), SignInActivity.class));
+				// finish();
+				mAuth.signOut();
 			}
 		});
 
@@ -48,10 +69,16 @@ public class HomeActivity extends Activity
 		});
 
 		Button referButton = findViewById(R.id.refer);
-		scoopButton.setOnClickListener(new OnClickListener(){
+		referButton.setOnClickListener(new OnClickListener(){
 			public void onClick(View v){
 				startActivity(new Intent(getApplicationContext(), AddPetActivity.class));
 			}
 		});
 	}
+
+	@Override
+	protected void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
 }
