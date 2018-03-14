@@ -16,7 +16,6 @@
 			android:layout_height="120dp"
 			android:layout_width="120dp"
 			android:id="@+id/pet_image"
-			android:src="@drawable/circle"
 			android:layout_marginTop="16dp"/>
 
 		<TextView
@@ -55,12 +54,14 @@
 			android:layout_marginEnd="16dp">
 
 			<Button
+				android:id="@+id/disagree"
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
 				android:text="Disagree"
 				android:layout_weight="1.0"/>
 
 			<Button
+				android:id="@+id/agree"
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
 				android:text="Agree"
